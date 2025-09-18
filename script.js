@@ -21,3 +21,18 @@ function rollDice(){
 }
 
 document.querySelector(".rollButton").addEventListener("click", rollDice)
+
+function reset(){
+    var image1Path = "images/dice6.png"
+    var image2Path = "images/dice6.png"
+
+    var image1 = document.querySelector(".img1");
+    image1.setAttribute("src", image1Path)
+    
+    var image2 = document.querySelector(".img2");
+    image2.setAttribute("src", image2Path)
+
+    document.querySelector("h1").textContent = "Roll Me"
+}
+
+document.querySelector(".resetButton").addEventListener("click", reset)
